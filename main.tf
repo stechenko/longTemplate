@@ -237,6 +237,7 @@ resource "scalr_environment" "list_known_after_apply" {
 
 resource "scalr_provider_configuration" "nested_resource" {
    name                   = "pcfg2_${formatdate("HH-mm-ss", timestamp())}"
+key = "x-86"
    custom {
      provider_name = "kubernetes"
      argument {
