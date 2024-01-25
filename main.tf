@@ -239,7 +239,6 @@ resource "scalr_provider_configuration" "nested_resource" {
    name                   = "pcfg2_${formatdate("HH-mm-ss", timestamp())}"
    custom {
      provider_name = "kubernetes"
-     key = "x-86"
      argument {
        name        = "host"
        value       = "my-host"
@@ -256,6 +255,22 @@ resource "scalr_provider_configuration" "nested_resource" {
        sensitive = true
      }
    }
+}
+
+resource "kubernetes_config_map" "example" {
+  metadata {
+    name = "my-config"
+  }
+
+  data = {
+    api_host             = "myhost:443"
+    db_host              = "dbhost:5432"
+    "my_config_file.yml" = "${file("${path.module}/my_config_file.yml")}"
+  }
+
+  binary_data = {
+    "my_payload.bin" = "${filebase64("${path.module}/my_payload.bin")}"
+  }
 }
 
 # ----------------------------------------------------------------------------------------- #
