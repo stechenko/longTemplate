@@ -262,6 +262,6 @@ resource "scalr_environment" "list_known_after_apply" {
 resource "null_resource" "long_triggers_replacement" {
   triggers = {
     # condition ? true_val : false_val
-    long = var.question != "initial" ? var.replacement : var.initial
+    long = var.question != "initial" ? var.replacement : var.initia
   }
 }
