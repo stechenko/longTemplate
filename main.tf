@@ -218,7 +218,7 @@ data "scalr_policy_group" "pg_reference" {
 
 resource "scalr_policy_group" "object_known_after_apply" {
   name            = "policy_${formatdate("HH-mm-ss", timestamp())}"
-  opa_version     = "0.55.0"
+  opa_version     = "0.55.0009"
   vcs_provider_id = data.scalr_policy_group.pg_reference.vcs_provider_id
   vcs_repo {
     identifier = data.scalr_policy_group.pg_reference.vcs_repo[0].identifier
@@ -262,6 +262,6 @@ resource "scalr_environment" "list_known_after_apply" {
 resource "null_resource" "long_triggers_replacement" {
   triggers = {
     # condition ? true_val : false_val
-    long = var.question != "initial" ? var.replacement : var.initia
+    long = var.question != "initial" ? var.replacement : var.initial
   }
 }
