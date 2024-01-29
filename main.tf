@@ -1,15 +1,5 @@
 terraform {
   required_providers {
-    scalr = {
-      source  = "registry.scalr.io/scalr/scalr"
-      version = "> 1.0.0"
-    }
-  }
-}
-
-
-terraform {
-  required_providers {
     random = {
       source = "hashicorp/random"
       version = "2.3.0"
