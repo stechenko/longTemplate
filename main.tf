@@ -13,7 +13,7 @@ variable my_count {
 
 resource "random_string" "random_string" {
 
-    count = var.my_count
+    count = 10
 
     length  = 4
     special = false
@@ -37,8 +37,8 @@ variable "vault_namespace" {
 
 
 provider "vault" {
-    address   = var.vault_address
-    namespace = var.vault_namespace
+    address   = 1212
+    namespace = 1212
 
     skip_child_token = true
     token = "dummy"
