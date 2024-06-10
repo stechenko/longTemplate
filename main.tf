@@ -7,5 +7,5 @@ variable "vault_namespace" {
 }
 
 resource "null_resource" "resourceHello" {
-    count =  10
+count =  10
 }  
