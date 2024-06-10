@@ -3,9 +3,8 @@ variable my_count {
 }
 
 variable "vault_namespace" {
-  default = "PCAT"
-}
+  default = "PCAT"}
 
 resource "null_resource" "resourceHello" {
-  count = 10
-
+    count =  10
+}  
