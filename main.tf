@@ -8,13 +8,8 @@ resource "null_resource" "resourceHello" {
 count=10
 }
 
-resource "string_resource" "resourceString" {
-    count=10
+resource "random_string" "random" {
+  length           = 16
+  special          = true
 }
-
-resource "aws_instance" "web" {
-  ami           = "ami-a1b2c3d4"
-  instance_type = "t2.micro"
-}
-
 
