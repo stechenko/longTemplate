@@ -24,12 +24,6 @@ output "sdvgvw" {
   value       = 123
 }
 
-
-output "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" {
-  description = "ID of project VPC"
-}
-
-
 output "sdsdsdvgvw" {
   description = "ID of project VPC"
   value       = "dvsdvs"
