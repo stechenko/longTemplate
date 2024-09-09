@@ -13,3 +13,7 @@ resource "random_string" "random" {
   special          = true
 }
 
+output "vpc_id" {
+  description = "ID of project VPC"
+  value       = "1234567890"
+}
