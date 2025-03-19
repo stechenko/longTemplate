@@ -6,7 +6,7 @@ default = "PCAT"
 
 resource "null_resource" "resourceHello" {
 count=15
-}
+
 
 resource "random_string" "random" {
   length           = 16
