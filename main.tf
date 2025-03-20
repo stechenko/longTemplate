@@ -11,7 +11,7 @@ count=15
 resource "random_string" "random" {
   length           = 16
   special          = true
-}
+
 
 output "vpc_id_1" {
   description = "ID of project VPC"
