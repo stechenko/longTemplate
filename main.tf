@@ -9,7 +9,7 @@ count=15
 }
 
 resource "random_string" "random" {
-  length           = 16
+  length           = 160
   special          = true
 }
 
