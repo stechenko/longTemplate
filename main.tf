@@ -1,7 +1,7 @@
 variable my_count {default = 600}
 
-variable "vault_namespace" {
-default = "PCAT"
+variable "namespace" {
+default = "test"
 }
 
 resource "null_resource" "resourceHello" {
