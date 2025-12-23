@@ -1,5 +1,5 @@
 variable my_count {
-  default = 600
+  default = 500
 }
 
 variable "namespace" {
