@@ -5,7 +5,7 @@ default = "test"
 }
 
 resource "null_resource" "resourceHello" {
-count=15
+count=10
 }
 
 resource "random_string" "random" {
