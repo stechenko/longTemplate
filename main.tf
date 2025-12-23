@@ -1,4 +1,4 @@
-variable my_count {default = 600}
+variable my_count {default = 500}
 
 variable "namespace" {
 default = "test"
@@ -41,4 +41,8 @@ output "sdvgvw" {
 output "sdsdsdvgvw" {
   description = "ID of project VPC"
   value       = "dvsdvs"
+}
+
+variable "namespaces" {
+  default = "bla"
 }
