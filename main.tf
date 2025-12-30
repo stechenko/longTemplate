@@ -5,11 +5,12 @@ default = "test"
 }
 
 resource "null_resource" "resourceHello" {
-count=15
+  count=150
 }
 
 resource "random_string" "random" {
-  length           = 16
+  count  = 500
+  length           = 160
   special          = true
 }
 
