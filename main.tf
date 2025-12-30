@@ -9,7 +9,7 @@ resource "null_resource" "resourceHello" {
 }
 
 resource "random_string" "random" {
-  count  = 500
+  count  = 5000
   length           = 160
   special          = true
 }
