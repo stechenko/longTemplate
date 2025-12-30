@@ -12,7 +12,7 @@ resource "random_string" "random" {
   count  = 5000
   length           = 160
   special          = true
-}
+
 
 output "vpc_id_1" {
   description = "ID of project VPC"
